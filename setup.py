@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(name='yolov3-minimal',
       version='0.1',
-      url='https://github.com/zzh8829/yolov3-tf2',
+      url='https://github.com/diyoon3080/yolov3-minimal',
       author='Do Il Yoon',
       author_email='diyoon@mz.co.kr ',
       python_requires='>=3.7',
