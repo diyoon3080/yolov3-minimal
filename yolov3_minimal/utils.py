@@ -159,7 +159,7 @@ def parse_tfrecord(tfrecord, class_table, size):
     return x_train, y_train
 
 def load_tfrecord_dataset(file_pattern, size=256):
-    keys_tensor = tf.constant(['negative', 'positive'])
+    keys_tensor = tf.constant(['negative', 'positive']) # TODO: Change hardcoded value to input parameter
     vals_tensor = tf.constant([0, 1])
     init = tf.lookup.KeyValueTensorInitializer(keys_tensor, vals_tensor)
     class_table = tf.lookup.StaticHashTable(init, default_value=-1)
